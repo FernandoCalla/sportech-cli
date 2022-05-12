@@ -43,13 +43,13 @@ const LandingPage=()=>{
               <h1 id="torneos" className="my-6 text-1xl text-black md:text-3xl">TORNEOS</h1>
               <section className="flex flex-wrap justify-center">
                 {tournaments.map((torneo,index)=>(
-                    <TournamentCard name={torneo.name} description={torneo.description} imagen={torneo.imagen}/>
+                    <TournamentCard key={index} name={torneo.name} description={torneo.description} imagen={torneo.imagen}/>
                 ))}              
               </section>
               <h1 id="equipos" className="my-6 text-1xl text-black md:text-3xl">EQUIPOS</h1>
               <section className="flex flex-wrap justify-center">
                 {teams.map((team,index)=>(
-                    <TeamsCard name={team.name} description={team.description} imagen={team.imagen} sport={team.sport} />
+                    <TeamsCard key={index} name={team.name} description={team.description} imagen={team.imagen} sport={team.sport} />
                 ))}              
               </section>
           </center>

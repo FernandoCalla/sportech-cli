@@ -1,5 +1,3 @@
-import { useState } from 'react'
-import logo from './logo.svg'
 import './App.css'
 import {
   BrowserRouter,
@@ -7,6 +5,7 @@ import {
   Route,
 } from "react-router-dom"; 
 import LandingPage from './pages/Landing';
+import Login from './pages/Login/index'
 
 function App() {
 
@@ -14,6 +13,7 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<LandingPage/>}/>
+      <Route path="/login" element={<Login/>}/>
     </Routes>
   </BrowserRouter>
   )
