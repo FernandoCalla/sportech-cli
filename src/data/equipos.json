@@ -1,0 +1,34 @@
+{
+    "teams":[
+        {
+            "denomination":"asdas",
+            "description":"asdasdas",
+            "sport":"futbol",
+            "imagen":"http://assets.stickpng.com/images/584a9b3bb080d7616d298777.png"
+        },
+        {
+            "denomination":"asdas",
+            "description":"asdasdas",
+            "sport":"futbol",
+            "imagen":"http://assets.stickpng.com/images/584a9b3bb080d7616d298777.png"
+        },
+        {
+            "denomination":"asdas",
+            "description":"asdasdas",
+            "sport":"futbol",
+            "imagen":"http://assets.stickpng.com/images/584a9b3bb080d7616d298777.png"
+        },
+        {
+            "denomination":"asdas",
+            "description":"asdasdas",
+            "sport":"futbol",
+            "imagen":"http://assets.stickpng.com/images/584a9b3bb080d7616d298777.png"
+        },
+        {
+            "denomination":"asdas",
+            "description":"asdasdas",
+            "sport":"futbol",
+            "imagen":"http://assets.stickpng.com/images/584a9b3bb080d7616d298777.png"
+        }
+    ]
+}

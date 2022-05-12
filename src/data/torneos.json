@@ -1,0 +1,30 @@
+{
+    "tournaments":[
+        {
+            "name":"asdas",
+            "description":"asdasdas",
+            "imagen":"https://img.freepik.com/vector-gratis/torneo-futbol-plantilla-fondo-azul_9111-420.jpg"
+        },
+        {
+            "name":"asdas",
+            "description":"asdasdas",
+            "imagen":"https://previews.123rf.com/images/enterline/enterline1403/enterline140300035/26430843-una-ilustraci%C3%B3n-vectorial-de-un-concepto-de-torneo-de-baloncesto-.jpg"
+        },
+        {
+            "name":"asdas",
+            "description":"asdasdas",
+            "imagen":"https://img.freepik.com/vector-gratis/torneo-futbol-plantilla-fondo-azul_9111-420.jpg"
+        },
+        {
+            "name":"asdas",
+            "description":"asdasdas",
+            "imagen":"https://img.freepik.com/vector-gratis/torneo-futbol-plantilla-fondo-azul_9111-420.jpg"
+        }
+        ,
+        {
+            "name":"asdas",
+            "description":"asdasdas",
+            "imagen":"https://img.freepik.com/vector-gratis/torneo-futbol-plantilla-fondo-azul_9111-420.jpg"
+        }
+    ]
+}
