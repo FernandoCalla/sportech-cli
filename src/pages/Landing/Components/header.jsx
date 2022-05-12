@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import PersonAddAltIcon from '@mui/icons-material/PersonAddAlt';
 import LockOpenIcon from '@mui/icons-material/LockOpen';
 import { Link as ScrollLink, animateScroll } from 'react-scroll'
+import ButtonChangeTheme from '../../../components/ButtonChangeTheme';
 
 const pages = ['Products', 'Pricing', 'Blog'];
 const settings = [{path:'',name:'Sing in',icon:LockOpenIcon}, {path:'',name:'Sing up',icon:PersonAddAltIcon}];
@@ -49,7 +50,7 @@ const Header = () => {
         <div className="flex justify-center">          
             <Link to="/login" className="btn_black">
               Iniciar sesión
-            </Link>          
+            </Link>   
         </div>
       </div>
     </header>
