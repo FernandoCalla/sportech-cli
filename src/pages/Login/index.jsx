@@ -5,7 +5,7 @@ import Button from '@mui/material/Button';
 import { useForm, Controller } from "react-hook-form";
 import { TextField } from '@mui/material';
 import ButtonChangeTheme from '../../components/ButtonChangeTheme';
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { LoginService } from '../../services/login';
 
 const Login =()=>{
@@ -18,7 +18,6 @@ const Login =()=>{
       });
     const onSubmit=async (formData)=>{
         const response = await LoginService(formData)
-        console.log("H",response)
           if (response.success) {
             localStorage.setItem("Usuario",JSON.stringify(response.usuario))
             if(response.usuario.rol === 0)navigate(`/admin`)
@@ -69,6 +68,9 @@ const Login =()=>{
                                 <Button type="submit" variant="contained" >Ingresar</Button>
                             </div>
                         </form>
+                        <Link to="/register" className="text-sm text-blue-600">
+                            ¿No tienes cuenta? Regístrate
+                        </Link>
                     </center>
                 </CardContent>
             </Card>
