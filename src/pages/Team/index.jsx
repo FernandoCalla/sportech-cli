@@ -10,8 +10,7 @@ const TeamDashboard=()=>{
           path="/"
           element={<Dashboard navConfig={teamNavConfig}/>}
         >
-          <Route index element={<Inicio />} />
-          
+          <Route index element={<Inicio />} />          
         </Route>
       </Routes>
     )

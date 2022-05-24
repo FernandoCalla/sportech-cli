@@ -40,7 +40,7 @@ const HeaderLayout = ({handleDrawerOpen,open,setOpen}) =>{
           >
             <MenuIcon />
           </IconButton>
-          <img src="src/assets/SporTechLogo.png" alt="logo" width="80" height="80"/>
+          <img src="/src/assets/SporTechLogo.png" alt="logo" width="80" height="80"/>
           {/* <Typography variant="h6" noWrap component="div">
             SporTech
           </Typography>           */}
