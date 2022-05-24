@@ -6,5 +6,9 @@ export const createTeam = (dataRegister) => {
     return axios.post(`${API}/api/team`,dataRegister)
 }
 
+export const GetAllTeams=()=>{
+   return axios.get(`${API}/api/team`)
+}
+
 
 

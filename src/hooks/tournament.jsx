@@ -1,7 +1,7 @@
 import { useMutation,useQuery,useQueryClient } from "react-query"
 import { createTeam, GetAllTeams} from "../services/team"
 
-const key="team"
+const key="tournament"
 
 export const useGetAllTeams=()=>{
   return useQuery(key,GetAllTeams)

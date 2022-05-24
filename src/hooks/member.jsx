@@ -1,14 +1,11 @@
 import { useMutation,useQuery,useQueryClient } from "react-query"
-import { createMember } from "../services/member"
+import { createMember, GetAllMembers } from "../services/member"
 
 const key="member"
-// export const useGetAllCategoria=()=>{
-//     return useQuery(key,createUser)
-// }
 
-// export const useGetByIdCategoria=(id)=>{
-//     return useQuery(key,GetById(id))
-// }
+export const useGetAllMembers=()=>{
+  return useQuery(key,GetAllMembers)
+}
 
 export const useCreateMember=(body)=>{
     const queryClient = useQueryClient()
@@ -19,5 +16,7 @@ export const useCreateMember=(body)=>{
       })
     return mutation
 }
+
+
 
 
