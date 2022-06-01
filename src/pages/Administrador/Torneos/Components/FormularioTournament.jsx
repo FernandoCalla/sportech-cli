@@ -229,13 +229,10 @@ export default function FormularioTournament({editar}) {
                                         select
                                         label="Deporte"       
                                     >
-                                        <MenuItem value={'627af0a52216af7fbbf1a62b'}>
+                                        <MenuItem value={'6297124e14a44d4cad301530'}>
                                             Futbol
                                         </MenuItem>
-                                        <MenuItem value={"627af4d4d64b3513060db609"}>
-                                            Tenis
-                                        </MenuItem>
-                                        <MenuItem value={"627d904e83e260a4d300e955"}>
+                                        <MenuItem value={"6297124614a44d4cad30152e"}>
                                             Basquet
                                         </MenuItem>
                                     </TextField>
