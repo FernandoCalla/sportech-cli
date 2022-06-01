@@ -1,9 +1,9 @@
 import axios from "axios"
 
-const API = "http://localhost:4000"
+const API = import.meta.env.VITE_SERVER_URL || "http://localhost:4000"
 
 export const createUser = async(dataRegister) => {
-    try {
+      try {
         const response =await axios.post(`${API}/api/user`,dataRegister)
         if (response.status !== 201 && response.status !== 200)
           return { success: false, formErrors: response.data }    

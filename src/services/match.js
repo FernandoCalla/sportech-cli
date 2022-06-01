@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const API = "http://localhost:4000"
+const API = import.meta.env.VITE_SERVER_URL || "http://localhost:4000"
 
 export const CreateMatch = (dataRegister) => {
     return axios.post(`${API}/api/match`,dataRegister)

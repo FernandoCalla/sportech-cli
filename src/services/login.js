@@ -1,8 +1,8 @@
 import axios from "axios"
 
-const API = "http://localhost:4000"
+const API = import.meta.env.VITE_SERVER_URL || "http://localhost:4000"
 
-export const LoginService = async(dataLogin) => {
+export const LoginService = async(dataLogin) => {  
     try {
         const response =await axios.post(`${API}/auth/login`,dataLogin)
         console.log("estado",response)
