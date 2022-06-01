@@ -75,7 +75,7 @@ const TorneoDetalle=()=>{
           <Typography variant="h5" gutterBottom component="div">Equipos</Typography>          
         </AccordionSummary>
         <AccordionDetails>
-          <FormularioAddTeam idTournament={torneo._id}/>
+          <FormularioAddTeam idTournament={torneo._id} sport={torneo.sport.denomination}/>
           <div className='flex flex-wrap'>
             {torneo.teams.map((team,index)=><CardTeam key={index} name={team.denomination} imagen={team.photo}/>)}
           </div>
