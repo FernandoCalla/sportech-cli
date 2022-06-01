@@ -3,12 +3,13 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import { useForm, Controller } from "react-hook-form";
-import { TextField } from '@mui/material';
+import { Alert, TextField } from '@mui/material';
 import ButtonChangeTheme from '../../components/ButtonChangeTheme';
 import { Link, useNavigate } from "react-router-dom";
 import { LoginService } from '../../services/login';
 
 const Login =()=>{
+    const [error,setError]=React.useState(false)
   const navigate = useNavigate();
     const {
         control,
@@ -23,6 +24,9 @@ const Login =()=>{
             if(response.usuario.rol === 0)navigate(`/admin/torneos`)
             if(response.usuario.rol === 1)navigate(`/team/perfil`)
             if(response.usuario.rol === 2)navigate(`/member/perfil`)
+          }
+          else {
+            setError(true)
           }
     }
     return (
@@ -68,6 +72,7 @@ const Login =()=>{
                                 <Button type="submit" variant="contained" >Ingresar</Button>
                             </div>
                         </form>
+                        {error && <Alert severity="error">Error al iniciar sesion!</Alert>}
                         <Link to="/register" className="text-sm text-blue-600">
                             ¿No tienes cuenta? Regístrate
                         </Link>
