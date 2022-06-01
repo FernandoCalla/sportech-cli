@@ -43,7 +43,7 @@ const RegisterAdmin=({usuario})=>{
     }
     return(
         <center>
-            <img src="src/assets/SporTechLogo.png" alt="logo" width="200" height="300"/>
+            <img src="https://res.cloudinary.com/sportech/image/upload/v1654066087/sportech/SporTechLogo_w7oavu.png" alt="logo" width="200" height="300"/>
             <h2>Datos de Admin</h2>
                 <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-2">
                             <div className='mx-2 my-2'>

@@ -30,7 +30,7 @@ const Login =()=>{
             <Card elevation={3} sx={{ minWidth: 275 ,width:450 ,minHeight:400, height:500}}>
                 <CardContent>
                     <center>
-                        <img src="src/assets/SporTechLogo.png" alt="logo" width="200" height="300"/>
+                        <img src="https://res.cloudinary.com/sportech/image/upload/v1654066087/sportech/SporTechLogo_w7oavu.png" alt="logo" width="200" height="300"/>
                         <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col">
                             <div className='mx-6 my-2'>
                                 <Controller
