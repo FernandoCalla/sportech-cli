@@ -6,7 +6,7 @@ import logo from '@/assets/logo.png'
 function Footer() {
   return (
     <footer className="z-20 mt-5 grid grid-rows-3 items-center justify-items-center gap-2 rounded-t-3xl bg-white p-4 shadow-md sm:grid-cols-3 sm:grid-rows-1 md:mt-10">
-      <img src={logo} alt="logo" className="h-full cursor-pointer" 
+      <img src={"https://res.cloudinary.com/sportech/image/upload/v1654066087/sportech/logo_gjurmn.png"} alt="logo" className="h-full cursor-pointer" 
           width="100"
           height="100" />
       <div>SporTech © {new Date().getFullYear()}</div>

@@ -29,7 +29,7 @@ const Header = () => {
     <header className="sticky top-0 z-20 flex h-20 w-full justify-center bg-white p-4 shadow-md">
       <div className="mx-4 flex w-full items-center justify-between gap-4 xl:w-[1280px]">
         <img
-          src={logo}
+          src={"https://res.cloudinary.com/sportech/image/upload/v1654066087/sportech/SporTechLogo_w7oavu.png"}
           alt="logo"
           onClick={toggleHome}
           className="h-full cursor-pointer"
