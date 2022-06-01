@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'
 import PersonAddAltIcon from '@mui/icons-material/PersonAddAlt';
 import LockOpenIcon from '@mui/icons-material/LockOpen';
 import { Link as ScrollLink, animateScroll } from 'react-scroll'
-import ButtonChangeTheme from '../../../components/ButtonChangeTheme';
+import logo from '@/assets/SporTechLogo.png'
+// "src/assets/SporTechLogo.png"
 
 const pages = ['Products', 'Pricing', 'Blog'];
 const settings = [{path:'',name:'Sing in',icon:LockOpenIcon}, {path:'',name:'Sing up',icon:PersonAddAltIcon}];
@@ -28,7 +29,7 @@ const Header = () => {
     <header className="sticky top-0 z-20 flex h-20 w-full justify-center bg-white p-4 shadow-md">
       <div className="mx-4 flex w-full items-center justify-between gap-4 xl:w-[1280px]">
         <img
-          src="src/assets/SporTechLogo.png"
+          src={logo}
           alt="logo"
           onClick={toggleHome}
           className="h-full cursor-pointer"

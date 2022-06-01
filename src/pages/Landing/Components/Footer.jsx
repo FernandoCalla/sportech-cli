@@ -1,11 +1,12 @@
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { Tooltip } from '@mui/material';
+import logo from '@/assets/logo.png'
 
 function Footer() {
   return (
     <footer className="z-20 mt-5 grid grid-rows-3 items-center justify-items-center gap-2 rounded-t-3xl bg-white p-4 shadow-md sm:grid-cols-3 sm:grid-rows-1 md:mt-10">
-      <img src={"src/assets/logo.png"} alt="logo" className="h-full cursor-pointer" 
+      <img src={logo} alt="logo" className="h-full cursor-pointer" 
           width="100"
           height="100" />
       <div>SporTech © {new Date().getFullYear()}</div>

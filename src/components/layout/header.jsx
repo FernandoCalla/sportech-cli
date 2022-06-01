@@ -11,6 +11,7 @@ import { useState } from "react";
 import Logout from '@mui/icons-material/Logout';
 import Tooltip from '@mui/material/Tooltip';
 import { useNavigate } from "react-router-dom";
+import logo from '@/assets/SporTechLogo.png'
 
 const drawerWidth = 240;
 
@@ -61,7 +62,7 @@ const HeaderLayout = ({handleDrawerOpen,open:openMenu,setOpen}) =>{
           >
             <MenuIcon />
           </IconButton>
-          <img src="/src/assets/SporTechLogo.png" alt="logo" width="80" height="80"/>
+          <img src={logo} alt="logo" width="80" height="80"/>
             <div>
               <ButtonChangeTheme/>
             <Tooltip title="Account settings">
