@@ -34,7 +34,7 @@ const Perfil=()=>{
     if (UsuarioData.isError) {
         return <span>Error:C</span>
     }
-    return <>
+    else{return <>
         <div className='flex my-2'>
             <div className='mr-2'>
                 <img src={Usuario.photo} alt="imagen de perfil" width="350"/>
@@ -95,7 +95,7 @@ const Perfil=()=>{
             </div>
           </div>
         ))}
-    </>
+    </>}
 }
 
 export default Perfil
