@@ -56,7 +56,7 @@ BootstrapDialogTitle.propTypes = {
   onClose: PropTypes.func.isRequired,
 };
 
-export default function FormularioAddTeam({idTournament}) {  
+export default function FormularioAddTeam({idTournament,sport}) {  
   const Teams=useGetAllTeams()
   const teamsData= Teams?.data?.data?.teams ?? []
   const [open, setOpen] = React.useState(false);
@@ -118,7 +118,7 @@ export default function FormularioAddTeam({idTournament}) {
                                         select
                                         label="Equipo"       
                                     >
-                                      {teamsData.map((team,index)=>
+                                      {teamsData.filter((team)=>team.sport.denomination === sport).map((team,index)=>
                                         <MenuItem value={team._id}>
                                             {team.denomination}
                                         </MenuItem>)}                              
