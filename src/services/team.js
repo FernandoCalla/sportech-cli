@@ -19,7 +19,6 @@ export const GetAllTeams=()=>{
 }
 
 export const GetTeamById=(id)=>{
-    console.log("SIII")
     return axios.get(`${API}/api/team/${id}`)
  }
 
