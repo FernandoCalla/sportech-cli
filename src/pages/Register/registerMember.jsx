@@ -25,7 +25,6 @@ const RegisterMember=({usuario})=>{
         defaultValues: { firstName: "", lastName: "" , surName: "",dni:"",age:'',height:'',gender:'',sport:"",typeMember:""},
       });
     const onSubmit=(formData)=>{
-        console.log("Formulario Member",formData)
         const { foto:image } = formData
         const data = new FormData()
         image && data.append('photo', image[0], image[0].name)
@@ -50,7 +49,7 @@ const RegisterMember=({usuario})=>{
     }
     return(
         <center>
-            <img src="src/assets/SporTechLogo.png" alt="logo" width="200" height="300"/>
+            <img src="https://res.cloudinary.com/sportech/image/upload/v1654066087/sportech/SporTechLogo_w7oavu.png" alt="logo" width="200" height="300"/>
             <h2>Datos de Jugador/Entrenador</h2>
                 <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-2">
                             <div className='mx-2 my-2'>

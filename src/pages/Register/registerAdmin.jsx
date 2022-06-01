@@ -1,8 +1,8 @@
 import * as React from 'react';
 import Button from '@mui/material/Button';
 import { useForm, Controller } from "react-hook-form";
-import { Alert, MenuItem, TextField } from '@mui/material';
-import { Link, useNavigate } from "react-router-dom";
+import { Alert,  TextField } from '@mui/material';
+import { Link } from "react-router-dom";
 import { styled } from '@mui/material/styles';
 import PhotoCamera from '@mui/icons-material/PhotoCamera';
 import {useCreateAdmin} from '../../hooks/admin'
@@ -10,7 +10,6 @@ import {useCreateAdmin} from '../../hooks/admin'
 const Input = styled('input')({
     display: 'none',
   });
-  
 
 const RegisterAdmin=({usuario})=>{
     const {user}=usuario
@@ -43,7 +42,7 @@ const RegisterAdmin=({usuario})=>{
     }
     return(
         <center>
-            <img src="src/assets/SporTechLogo.png" alt="logo" width="200" height="300"/>
+            <img src="https://res.cloudinary.com/sportech/image/upload/v1654066087/sportech/SporTechLogo_w7oavu.png" alt="logo" width="200" height="300"/>
             <h2>Datos de Admin</h2>
                 <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-2">
                             <div className='mx-2 my-2'>
