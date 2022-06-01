@@ -3,9 +3,9 @@ import { useNavigate } from "react-router-dom";
 
 import LabelSports from "./labelSports"
 
-const CardsTournaments=({imagen,name,sport,id})=>{
+const CardsTournaments=({imagen,name,sport,id,ruta})=>{
     let navigate = useNavigate();
-    return <Card className="m-4" elevation={3} sx={{ width: 245 ,height:245 }} onClick={()=>{navigate(`/admin/torneos/${id}`)}}>
+    return <Card className="m-4" elevation={3} sx={{ width: 245 ,height:245 }} onClick={()=>{navigate(`${ruta}${id}`)}}>
         <div className="w-full">
             <LabelSports name={sport}/>
         </div>
@@ -25,9 +25,7 @@ const CardsTournaments=({imagen,name,sport,id})=>{
                 
             </center>
         </CardContent>
-        
         </CardActionArea>
-   
   </Card>
 }
 

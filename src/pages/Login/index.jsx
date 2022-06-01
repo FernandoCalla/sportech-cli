@@ -20,9 +20,9 @@ const Login =()=>{
         const response = await LoginService(formData)
           if (response.success) {
             localStorage.setItem("Usuario",JSON.stringify(response.usuario))
-            if(response.usuario.rol === 0)navigate(`/admin`)
-            if(response.usuario.rol === 1)navigate(`/team`)
-            if(response.usuario.rol === 2)navigate(`/member`)
+            if(response.usuario.rol === 0)navigate(`/admin/torneos`)
+            if(response.usuario.rol === 1)navigate(`/team/perfil`)
+            if(response.usuario.rol === 2)navigate(`/member/perfil`)
           }
     }
     return (

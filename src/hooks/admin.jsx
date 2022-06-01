@@ -1,10 +1,12 @@
 import { useMutation,useQuery,useQueryClient } from "react-query"
-import { createAdmin } from "../services/admin"
+import { createAdmin, getAdminByIdUser } from "../services/admin"
 
 const key="admin"
-// export const useGetAllCategoria=()=>{
-//     return useQuery(key,createUser)
-// }
+export const useGetByIdAdmin=(id)=>{  
+    let usuario=localStorage.getItem("Usuario")
+    let userComplete =JSON.parse(usuario) || {id:"",full_path:"",token:""}  
+    return useQuery(key,()=>getAdminByIdUser(userComplete.id))
+}
 
 // export const useGetByIdCategoria=(id)=>{
 //     return useQuery(key,GetById(id))
