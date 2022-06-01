@@ -12,9 +12,7 @@ export const useGetByIdTeam=()=>{
   let userComplete =JSON.parse(usuario) || {id:"",full_path:"",token:""}  
   return useQuery(key,()=>GetTeamByIdUser(userComplete.id))
 }
-export const useGetTeam=(id)=>{   
-  
-  console.log("SIII 1")
+export const useGetTeam=(id)=>{  
   return useQuery(key,()=>GetTeamById(id))
 }
 

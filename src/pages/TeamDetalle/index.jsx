@@ -6,8 +6,7 @@ import { useParams } from "react-router-dom";
 const TeamDetalle=()=>{
     let { teamId } = useParams();
     const UsuarioData=useGetTeam(teamId)
-    console.log("U",UsuarioData)
-    const Usuario= ((UsuarioData?.data?.data?.team) ?? [""])
+    const Usuario= ((UsuarioData?.data?.data?.team) ?? {trainers:[],players:[]})
 
     if (UsuarioData.isLoading) {
         return <span>Loading...</span>
@@ -20,14 +19,16 @@ const TeamDetalle=()=>{
 
 
     return <>
+        <Card className="flex justify-center p-4 my-2" elevation={3}>
+            <Typography variant="h4" gutterBottom component="div">
+            {Usuario.denomination}  
+            </Typography>
+        </Card>   
         <div className='flex m-4'>
             <div className='mr-2'>
                 <img src={Usuario.photo} alt="imagen de perfil" width="350"/>
             </div>
             <Card className="p-4 flex-auto" elevation={5}>
-                <Typography variant="h4" gutterBottom component="div">
-                {Usuario.denomination}
-                </Typography>
                 <Typography variant="subtitle1" gutterBottom component="div"><b>Descripcion:</b>{Usuario.description}</Typography>
             </Card>            
         </div>
@@ -53,7 +54,7 @@ const TeamDetalle=()=>{
                     </TableRow>
                 </TableHead>
                 <TableBody>
-                    {Usuario.trainers.map((entrenador,index)=>
+                    {Usuario && Usuario.trainers.map((entrenador,index)=>
                         <TableRow key={index}>
                             <TableCell ><Avatar alt="logo equipo" src={entrenador.photo}/></TableCell>
                             <TableCell >{`${entrenador.firstName} ${entrenador.lastName} ${entrenador.surName} `}</TableCell>
@@ -91,7 +92,7 @@ const TeamDetalle=()=>{
                     </TableRow>
                 </TableHead>
                 <TableBody>
-                    {Usuario.players.map((jugador,index)=>
+                    {Usuario && Usuario.players.map((jugador,index)=>
                         <TableRow key={index}>
                             <TableCell ><Avatar alt="logo equipo" src={jugador.photo}/></TableCell>
                             <TableCell >{`${jugador.firstName} ${jugador.lastName} ${jugador.surName} `}</TableCell>
