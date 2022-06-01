@@ -10,7 +10,6 @@ import {useCreateAdmin} from '../../hooks/admin'
 const Input = styled('input')({
     display: 'none',
   });
-  
 
 const RegisterAdmin=({usuario})=>{
     const {user}=usuario
