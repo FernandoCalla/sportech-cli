@@ -73,7 +73,7 @@ const TorneoDetalle=()=>{
         </AccordionSummary>
         <AccordionDetails>
           <div className='flex flex-wrap'>
-            {torneo.teams.map((team,index)=><CardTeam key={index} name={team.denomination} imagen={team.photo}/>)}
+            {torneo.teams.map((team,index)=><CardTeam key={index} name={team.denomination} imagen={team.photo} id={team._id}/>)}
           </div>
         </AccordionDetails>
       </Accordion>
