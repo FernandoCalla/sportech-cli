@@ -101,31 +101,6 @@ const RegisterTeam=({usuario})=>{
                                     )}
                                 />
                             </div>
-                            {/* <div className='mx-2 my-2'>
-                                <Controller
-                                    name="sport"
-                                    control={control}
-                                    render={({ field }) => (
-                                    <TextField
-                                        {...field}
-                                        size="small"
-                                        fullWidth
-                                        select
-                                        label="Deporte"       
-                                    >
-                                        <MenuItem value={'futbol'}>
-                                            Futbol
-                                        </MenuItem>
-                                        <MenuItem value={"voley"}>
-                                            Voley
-                                        </MenuItem>
-                                        <MenuItem value={"basquet"}>
-                                            Basquet
-                                        </MenuItem>
-                                    </TextField>
-                                    )}
-                                />
-                            </div> */}
                             <div className='mx-2 my-2'>
                                 <label htmlFor="icon-button-file">
                                     <Input accept="image/*" id="icon-button-file" type="file" {...register("foto")}/>

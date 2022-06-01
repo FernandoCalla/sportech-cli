@@ -1,6 +1,6 @@
 const Inicio=()=>{
     return(
-        <h1>Hola al dashboard de Member</h1>
+        <h1>Hola al dashboard de Members</h1>
     )
 }
 

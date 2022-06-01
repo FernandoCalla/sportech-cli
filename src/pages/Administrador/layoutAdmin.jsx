@@ -6,7 +6,6 @@ import GroupsIcon from '@mui/icons-material/Groups';
 export function adminNavConfig() {
   return {
     links: [
-      { path: '.', name: 'Inicio', icon: HomeIcon },
       { path: 'torneos', name: 'Torneos', icon: EmojiEventsIcon },
       { path: 'equipos', name: 'Equipos', icon: GroupsIcon },
       { path: 'jugadores', name: 'Jugadores', icon: SportsHandballIcon }
