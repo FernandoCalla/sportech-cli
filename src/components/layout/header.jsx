@@ -62,7 +62,7 @@ const HeaderLayout = ({handleDrawerOpen,open:openMenu,setOpen}) =>{
           >
             <MenuIcon />
           </IconButton>
-          <img src={logo} alt="logo" width="80" height="80"/>
+          <img src={"https://res.cloudinary.com/sportech/image/upload/v1654066087/sportech/SporTechLogo_w7oavu.png"} alt="logo" width="80" height="80"/>
             <div>
               <ButtonChangeTheme/>
             <Tooltip title="Account settings">

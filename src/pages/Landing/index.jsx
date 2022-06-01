@@ -2,8 +2,6 @@ import Header from "./Components/header"
 import Typography from '@mui/material/Typography';
 import TournamentCard from "./Components/cardTournament";
 import TeamsCard from './Components/cardTeams'
-import Tournaments from '../../data/torneos.json'
-import Teams from '../../data/equipos.json'
 import Link from "react-scroll/modules/components/Link";
 import Footer from "./Components/Footer";
 import { useGetAllTournaments } from "../../hooks/tournament";
@@ -12,7 +10,6 @@ import { useGetAllTeams } from "../../hooks/team";
 import CardTeam from "../../components/CardTeam";
 import { Navigate, useNavigate } from "react-router-dom";
 import logo from '@/assets/logo.png'
-import deporte  from '@/assets/deporte.jpg'
 const scrollProps = {
     spy: true,
     smooth: true,
@@ -47,9 +44,9 @@ const LandingPage=()=>{
                 </Link>
             </div>
         
-            <img src={logo} alt="logo" width="400" height="500"/>
+            <img src={"https://res.cloudinary.com/sportech/image/upload/v1654066087/sportech/logo_gjurmn.png"} alt="logo" width="400" height="500"/>
             </section>
-          <img src={deporte} alt="logo" width="100%" height="500"/>
+          <img src={"https://res.cloudinary.com/sportech/image/upload/v1654066087/sportech/deporte_g8byfu.jpg"} alt="logo" width="100%" height="500"/>
           <center>
               <h1 id="torneos" className="my-6 text-1xl text-black md:text-3xl">TORNEOS</h1>
               <section className="flex flex-wrap justify-center">  
