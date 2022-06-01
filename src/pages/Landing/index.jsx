@@ -10,7 +10,7 @@ import { useGetAllTournaments } from "../../hooks/tournament";
 import CardsTournaments from "../../components/CardTorneos";
 import { useGetAllTeams } from "../../hooks/team";
 import CardTeam from "../../components/CardTeam";
-import { useNavigate } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router-dom";
 const scrollProps = {
     spy: true,
     smooth: true,
@@ -20,6 +20,7 @@ const scrollProps = {
   }
 
 const LandingPage=()=>{    
+    const navigate=useNavigate()
     const Torneos=useGetAllTournaments()
     const tournaments=Torneos?.data?.data?.tournaments ?? []
     const Teams=useGetAllTeams()
@@ -35,7 +36,8 @@ const LandingPage=()=>{
                 Plataforma dedicada al manejo de torneos deportivos , con un area para adquisicion de talento y registro de clubes.
                 </p>
                 <Link
-                    to="cursos"
+                    onClick={()=>navigate("/login")}
+                    to="/login"
                     {...scrollProps}
                     className="bg-orange-500 cursor-pointer rounded-xl px-8 py-2 text-white"
                     >
